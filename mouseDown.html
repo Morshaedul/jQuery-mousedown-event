@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Events of Submit</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>  
+        .div{ margin:5px;padding:2px; border:2px solid #666; width:60px;}</style> 
+</head>
+<body>
+    <p>Press down the mouse left button over this p element</p> 
+<script>  
+    $(document).ready(function(){  
+        $("p").mousedown(function(){  
+            $("p").css("background-color", "blue");  
+        });  
+        $("p").mouseup(function(){  
+            $("p").css("background-color", "lightyellow");  
+        });  
+    });  
+    </script> 
+
+    <script src="js/index.js"></script>
+</body>
+</html>
